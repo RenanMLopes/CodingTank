@@ -1,6 +1,11 @@
+import javax.swing.*;
+
 public class NumeroMaior {
     public static void main(String[] args) {
-        int a = 4, b = 6, c = 77;
+        int a = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+        int b = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+        int c = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro numero"));
+
         int x = 0;
 
         if(a > b && a > c){
