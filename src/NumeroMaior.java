@@ -6,15 +6,11 @@ public class NumeroMaior {
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
         int num3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro numero"));
 
-        int x = 0;
+        int maior = num1;
 
-        if(num1 > num2 && num1 > num3){
-            x = num1;
-        }else if(num2 > num1 && num2 > num3){
-            x = num2;
-        }else
-            x = num3;
+        maior = (num2 > maior) ? num2 : maior;
+        maior = (num3 > maior) ? num3 : maior;
 
-        System.out.println("o maior número é:" + x);
+        System.out.println("o maior número é:" + maior);
     }
 }
